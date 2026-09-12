@@ -48,5 +48,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  },
+  "allowScripts": {
+    "core-js@3.37.1": true,
+    "core-js-pure@3.37.1": true
   }
 }
