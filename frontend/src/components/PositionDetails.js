@@ -106,13 +106,13 @@ const PositionsDetails = () => {
     };
 
     return (
-        <Container className="mt-5">
+        <Container className="mt-5" data-testid="position-details">
             <Button variant="link" onClick={() => navigate('/positions')} className="mb-3">
                 Volver a Posiciones
             </Button>
-            <h2 className="text-center mb-4">{positionName}</h2>
+            <h2 className="text-center mb-4" data-testid="position-title">{positionName}</h2>
             <DragDropContext onDragEnd={onDragEnd}>
-                <Row>
+                <Row data-testid="kanban-board">
                     {stages.map((stage, index) => (
                         <StageColumn key={index} stage={stage} index={index} onCardClick={handleCardClick} />
                     ))}
